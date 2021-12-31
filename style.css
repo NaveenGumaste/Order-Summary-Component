@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
+  background-image: url(./images//pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--very-pale-blue);
+  position: relative;
+  font-size: 16px;
+}
+button {
+  font-family: inherit;
+}
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.text-content {
+  text-align: center;
+  justify-content: center;
+}
+.title {
+  color: var(--dark-blue);
+  font-weight: 900px;
+  font-size: 30px;
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+.text-content .subtitle {
+  color: hsl(223, 47%, 23%, 70%);
+  margin-bottom: 25px;
+}
+.plan-box {
+  background-color: var(--very-pale-blue);
+  width: 300px;
+  margin-left: 23px;
+  border-radius: 13px;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.plan-box img {
+  display: block;
+  padding-right: 3px;
+  margin-left: 4px;
+}
+.box-title {
+  margin-left: -25px;
+  text-align: left;
+  color: var(--dark-blue);
+}
+.box-title h5 {
+  font-size: 17px;
+  font-weight: 900px;
+}
+.box-title p {
+  font-size: 16px;
+  font-weight: 900px;
+  color: hsl(223, 47%, 23%, 80%);
+}
+.change a {
+  color: var(--bright-blue);
+  font-weight: 900;
+}
+.btn #btn {
+  display: block;
+  margin: auto;
+  color: white;
+  background-color: var(--bright-blue);
+  padding: 10px 10px;
+  border: none;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn {
+  padding-top: 20px;
+}
+.btn button #btn:hover {
+  color: hsl(245, 75%, 52%, 60%);
+}
+#btn {
+  font-weight: 900px;
+  box-shadow: 0 8px 25px -6px var(--bright-blue);
+}
+.btn .cancle-order {
+  display: block;
+  padding: 25px;
+  font-weight: 900px;
+  text-decoration: none;
+  color: var(--desaturated-blue);
+}
+.btn div:hover {
+  color: var(--desaturated-blue);
+  transition: color 3s ease-in-out;
+}
+.btn .cancle-order:hover {
+  text-decoration: underline;
+  color: var(--desaturated-blue);
+  transition: color 3s ease-in-out;
+}
+.plan-box a:hover {
+  text-decoration: none;
+  color: hsl(245, 75%, 52%, 60%);
+  transition: color 0.4s ease-in-out;
+}
+
+@media only screen and (max-width: 425px) {
+  body{
+    background-image: url(./images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container {
+    max-width: 87%;
+  }
+  .title{
+    font-size: 25px;
+  }
+  .plan-box{
+    padding: 12px;
+  }
+}
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
